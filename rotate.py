@@ -1,8 +1,8 @@
 import cv2 as cv
 import numpy as np
 
-image = cv.imread('images/input.jpg')
-cv.imshow('original',image)
+image = cv.imread('input.jpg')
+cv.imshow(image)
 cv.waitKey()
 
 height, width = image.shape[:2]
@@ -16,7 +16,7 @@ cv.imshow('Rotated Image', rotated_image)
 cv.waitKey()
 
 #Other Option to Rotate
-img = cv.imread('images/input.jpg')
+img = cv.imread('input.jpg')
 
 rotated_image = cv.transpose(img)
 
