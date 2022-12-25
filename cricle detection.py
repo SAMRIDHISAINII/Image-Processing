@@ -1,13 +1,3 @@
-# # some methods
-# Method - currently only cv2.HOUGH_GRADIENT available
-# dp - Inverse ratio of accumulator resolution
-# MinDist - the minimum distance between the center of detected circles
-# param1 - Gradient value used in the edge detection
-# param2 - Accumulator threshold for the HOUGH_GRADIENT method (lower allows more circles to be detected (false positives))
-# minRadius - limits the smallest circle to this size (via radius)
-# # MaxRadius - similarly sets the limit for the largest circles
-
-
 import cv2
 import numpy as np
 import cv2
@@ -32,3 +22,13 @@ for i in circles[0,:]:
 cv2.imshow('detected circles', image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+# # some methods
+# Method - currently only cv2.HOUGH_GRADIENT available
+# dp - Inverse ratio of accumulator resolution
+# MinDist - the minimum distance between the center of detected circles
+# param1 - Gradient value used in the edge detection
+# param2 - Accumulator threshold for the HOUGH_GRADIENT method (lower allows more circles to be detected (false positives))
+# minRadius - limits the smallest circle to this size (via radius)
+# # MaxRadius - similarly sets the limit for the largest circles
+
